@@ -45,6 +45,7 @@ public class PlayerController : MonoBehaviour {
 		if (other.gameObject.CompareTag("SpeedBump")){
 			Debug.Log("SpeedBUMPFOOOOO");
 			speed = 10;
+			rb.linearVelocity *= .4f;;
 		}
 		if (other.gameObject.CompareTag("FastyBump")){
 			Debug.Log("GOTTAGOFAST");
