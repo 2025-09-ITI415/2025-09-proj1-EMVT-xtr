@@ -45,7 +45,7 @@ public class PlayerController : MonoBehaviour {
 		if (other.gameObject.CompareTag("SpeedBump")){
 			Debug.Log("SpeedBUMPFOOOOO");
 			speed = 10;
-			rb.linearVelocity *= .4f;;
+			rb.linearVelocity *= .4f;
 		}
 		if (other.gameObject.CompareTag("FastyBump")){
 			Debug.Log("GOTTAGOFAST");
@@ -53,6 +53,9 @@ public class PlayerController : MonoBehaviour {
 		}	
 		if (other.gameObject.CompareTag("Respawn")){
 			Debug.Log("UfellOffLOOL");
+			transform.position = new Vector3(0f, 2f, 0f);
+			rb.linearVelocity *= 0f;
+			speed = 10;
 
 		}
 		
