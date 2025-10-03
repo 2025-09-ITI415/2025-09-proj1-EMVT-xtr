@@ -51,6 +51,10 @@ public class PlayerController : MonoBehaviour {
 			Debug.Log("GOTTAGOFAST");
 			speed = 30;
 		}	
+		if (other.gameObject.CompareTag("Respawn")){
+			Debug.Log("UfellOffLOOL");
+
+		}
 		
 		// ..and if the game object we intersect has the tag 'Pick Up' assigned to it..
 		/*if (other.gameObject.CompareTag ("Pick Up"))
