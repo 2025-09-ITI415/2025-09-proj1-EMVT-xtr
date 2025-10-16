@@ -8,6 +8,7 @@ TagManager:
   - Trap
   - SpeedBump
   - FastyBump
+  - Win
   layers:
   - Default
   - TransparentFX
